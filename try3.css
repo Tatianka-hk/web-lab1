@@ -1,0 +1,85 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+   /* grid-area: 'block1 block1 block1'
+               'block2 block3 block4'
+               'block2 block5 block6';*/
+    font-family: "Roboto Mono", monospace; /*шрифт*/
+
+  }
+.X{
+    /*padding: 10px;*/
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+.body2{
+    width: 100vw;
+    height: 65vh;
+    grid-template-columns: 0.6fr 2fr 1fr;
+    grid-template-rows: 0.6fr 2fr 1fr;
+    display: grid;
+    grid-area:'block2 body3 body4';
+}
+.block1{
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    background-color: bisque;
+}
+.block2{
+    /*;
+    height: 60vh;*/
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    background-color: darkblue;
+}
+
+.block3{
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    background-color:lightsteelblue;
+}
+.block4{
+   /* width: 30vw;
+    height: 40vh;*/
+    height: 57vh;
+    text-align: center;
+    display: flex;
+    background-color: tan;
+}
+.block5{
+    height: 55vh;
+    text-align: center;
+    display: flex;
+    background-color:lemonchiffon;
+    font-size: xx-large;
+}
+.block6{
+   /* 
+    height: 10vh;*/
+    
+    display:flex;
+    text-align: center;
+    background-color:olive;
+}
+.body3{
+    width: 52vw;
+}
+.block7{
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    background-color:bisque;
+}
+.Y{
+    padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
