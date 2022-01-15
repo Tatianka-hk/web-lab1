@@ -1,83 +1,69 @@
+body {
+  margin: 0;
+}
+
+p {
+    line-height: 20px;
+}
+
 .body {
-    width: 100vw;
-    height: 100vh;
-    font-family: "Roboto Mono", monospace; 
+  height: 100vh;
+  display: grid;
 
-  }
-.X{
-    padding: 10px;
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: whitesmoke;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  font-family: "Roboto Mono", monospace; /*шрифт*/
+
 }
-.body2{
-    width: 100vw;
-    height: 65vh;
-    grid-template-columns: 0.6fr 2fr 1fr;
-    grid-template-rows: 0.6fr 2fr 1fr;
-    display: grid;
-    grid-area:'block2 body3 body4';
+.body2 {
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+
+  display: grid;
+  grid-area: "block2 body3 body4";
 }
-.block1{
-    width: 100vw;
-    height: 20vh;
-    text-align: center;
-    display: flex;
-    background-color: bisque;
+.body1 {
+  text-align: center;
+  background-color: bisque;
 }
-.block2{
-    /*;
-    height: 60vh;*/
-    width: 30vw;
-    text-align: center;
-    display: flex;
-    background-color: darkblue;
+.block2 {
+  text-align: center;
+  background-color: darkblue;
 }
 
-.block3{
-    height: 10vh;
-    text-align: center;
-    display: flex;
-    background-color:lightsteelblue;
+.block3 {
+  text-align: center;
+  background-color: lightsteelblue;
 }
-.block4{
-   /* width: 30vw;
-    height: 40vh;*/
-    height: 57vh;
-    text-align: center;
-    display: flex;
-    background-color: tan;
+.block4 {
+  text-align: center;
+  background-color: tan;
 }
-.block5{
-    height: 55vh;
-    
-    display: flex;
-    text-align: center;
-    background-color:lemonchiffon;
-    font-size: xx-large;
+.block5 {
+  text-align: center;
+  background-color: lemonchiffon;
+  font-size: xx-large;
 }
-.block6{
-   /* 
-    height: 10vh;*/
-    
-    display:flex;
-    text-align: center;
-    background-color:olive;
+.block6 {
+  text-align: center;
+  background-color: olive;
 }
-.body3{
-    width: 52vw;
+.body3 {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 80%;
 }
-.block7{
-    width: 100vw;
-    height: 20vh;
-    text-align: center;
-    display: flex;
-    background-color:bisque;
+
+.body4 {
+  display: grid;
+  grid-template-rows: 90% 10%;
 }
-.Y{
-    padding: 10px;
+.body5 {
+  text-align: center;
+  background-color: bisque;
+}
+strong {
+  padding: 5px;
+  margin: 3px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: whitesmoke;
 }
-
