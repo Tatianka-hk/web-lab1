@@ -1,0 +1,34 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:check": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "stylelint:check": "stylelint \"**/*.css\" --ignore-path .gitignore",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatianka-hk/web-lab1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tatianka-hk/web-lab1/issues"
+  },
+  "homepage": "https://github.com/Tatianka-hk/web-lab1#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-sonarjs": "^0.11.0",
+    "husky": "^7.0.4",
+    "prettier": "2.5.1",
+    "stylelint-config-standard": "^24.0.0"
+  }
+}
