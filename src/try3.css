@@ -1,0 +1,82 @@
+:root {
+  --header: bisque;
+  --left: darkblue;
+  --center-top: lightsteelblue;
+  --photo: tan;
+  --nav: lemonchiffon;
+  --photo-name: olive;
+  --strong: whitesmoke;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  font-family: 'Roboto Mono', monospace;
+}
+
+p {
+  line-height: 20px;
+}
+
+main {
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  display: grid;
+  grid-area: 'block2 body3 body4';
+}
+
+header {
+  text-align: center;
+  background-color: var(--header);
+}
+
+.left {
+  text-align: center;
+  background-color: var(--left);
+}
+
+.center-top {
+  text-align: center;
+  background-color: var(--center-top);
+}
+
+.photo {
+  text-align: center;
+  background-color: var(--photo);
+}
+
+nav {
+  text-align: center;
+  background-color: var(--nav);
+  font-size: xx-large;
+}
+
+.photo-name {
+  text-align: center;
+  background-color: var(--photo-name);
+}
+
+.center {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--header);
+}
+
+strong {
+  padding: 5px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--strong);
+}
