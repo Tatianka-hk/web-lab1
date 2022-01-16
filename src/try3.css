@@ -23,7 +23,7 @@ p {
 main {
   grid-template-columns: 0.5fr 1fr 0.5fr;
   display: grid;
-  grid-area: 'block2 body3 body4';
+  grid-template-areas: 'block2 body3 body4';
 }
 
 header {
@@ -34,6 +34,7 @@ header {
 .left {
   text-align: center;
   background-color: var(--left);
+  grid-area: block2;
 }
 
 .center-top {
@@ -59,13 +60,21 @@ nav {
 
 .center {
   height: 100%;
-  display: grid;
-  grid-template-rows: 20% 80%;
+  grid-area: body3;
+  display: flex;
+  flex-direction: column;
+}
+
+.center nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right {
   display: grid;
-  grid-template-rows: 90% 10%;
+  grid-area: body4;
 }
 
 footer {
