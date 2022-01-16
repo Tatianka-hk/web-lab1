@@ -1,69 +1,78 @@
+:root{
+  --header:bisque;
+  --left:darkblue;
+  --center_top:lightsteelblue;
+  --photo:tan;
+  --nav:lemonchiffon;
+  --photo_name:olive;
+  --strong:whitesmoke;
+
+
+
+}
 body {
   margin: 0;
+  height: 100vh;
+  display: grid;
+
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  font-family: "Roboto Mono", monospace; 
 }
 
 p {
     line-height: 20px;
 }
 
-.body {
-  height: 100vh;
-  display: grid;
-
-  grid-template-rows: 0.5fr 2fr 0.5fr;
-  font-family: "Roboto Mono", monospace; /*шрифт*/
-
-}
-.body2 {
+main {
   grid-template-columns: 0.5fr 1fr 0.5fr;
 
   display: grid;
   grid-area: "block2 body3 body4";
 }
-.body1 {
+header {
   text-align: center;
-  background-color: bisque;
+  background-color: var(--header);
 }
-.block2 {
+.left{
   text-align: center;
-  background-color: darkblue;
+  background-color: var(--left);
 }
 
-.block3 {
+.center_top {
   text-align: center;
-  background-color: lightsteelblue;
+  background-color: var(--center_top);
 }
-.block4 {
+.photo {
   text-align: center;
-  background-color: tan;
+  background-color:var(--photo);
 }
-.block5 {
+nav {
   text-align: center;
-  background-color: lemonchiffon;
+  background-color: var(--nav);
   font-size: xx-large;
 }
-.block6 {
+.photo_name {
   text-align: center;
-  background-color: olive;
+  background-color: var(--photo_name);
 }
-.body3 {
+.center {
   height: 100%;
   display: grid;
   grid-template-rows: 20% 80%;
 }
 
-.body4 {
+.right {
   display: grid;
   grid-template-rows: 90% 10%;
 }
-.body5 {
+footer {
   text-align: center;
-  background-color: bisque;
+  background-color:  var(--header);
 }
 strong {
   padding: 5px;
   margin: 3px;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: whitesmoke;
+  background-color: var(--strong);
 }
